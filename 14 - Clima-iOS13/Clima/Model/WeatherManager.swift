@@ -26,6 +26,11 @@ struct WeatherManager {
         self.performRequest(url)
     }
     
+    func fetchWeather(lat: Double, lon: Double) {
+        let url = "\(weatherURL)?appid=\(weatherKey)&units=\(weatherUnits)&lat=\(lat)&lon=\(lon)"
+        self.performRequest(url)
+    }
+    
     private func performRequest(_ urlString: String) {
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)

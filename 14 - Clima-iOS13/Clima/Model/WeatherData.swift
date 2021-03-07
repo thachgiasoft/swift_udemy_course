@@ -4,7 +4,6 @@ struct WeatherData: Codable {
     let name: String
     let main: InMain
     let weather: [InWeather]
-    
 }
 
 struct InMain: Codable {
