@@ -6,9 +6,15 @@ I'm doing the Udemy Course [iOS 13 Bootcamp](https://www.udemy.com/course/ios-13
 
 With some screenshots too :P
 
-### 01 - Iam Rick
+
+<image style='float:left; height:50px' src='./.github/assets/readme/01_icon.png'>
+
+### . 01 - Iam Rick
 
 Yeah the most basic stuff, no functionality on this one.
+
+<image style='height:200px' src='./.github/assets/readme/01_image.png'>    
+
 
 ![App Icon](./.github/assets/readme/01_icon.png)
 
