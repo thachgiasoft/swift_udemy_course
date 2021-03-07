@@ -1,7 +1,13 @@
 import Foundation
 
 protocol WeatherManagerDelegate {
-    func didUpdateWeather(weather: WeatherModel)
+    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel)
+    func didFailWithError(error: Error)
+}
+
+extension WeatherManagerDelegate {
+    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {}
+    func didFailWithError(error: Error) { print(error) }
 }
 
 struct WeatherManager {
@@ -12,8 +18,6 @@ struct WeatherManager {
     var delegate: WeatherManagerDelegate?
     
     func fetchWeather(_ cityName: String) {
-        print(cityName)
-        
         if cityName == "" {
             return
         }
@@ -27,12 +31,12 @@ struct WeatherManager {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
                 if let e = error {
-                    print(e)
+                    self.delegate?.didFailWithError(error: e)
                 }
                 
                 if let d = data {
                     if let weatherModel = self.parseWeather(d) {
-                        self.delegate?.didUpdateWeather(weather: weatherModel)
+                        self.delegate?.didUpdateWeather(self, weather: weatherModel)
                     }
                 }
             }
@@ -54,7 +58,7 @@ struct WeatherManager {
             return weather
             
         } catch {
-            print (error)
+            self.delegate?.didFailWithError(error: error)
             return nil
         }
     }
