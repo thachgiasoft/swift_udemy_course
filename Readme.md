@@ -100,3 +100,14 @@ This is a more robust project with network API call and some use of GPS location
 
 <image style='float:left; height:50px' src='./.github/assets/readme/14_icon.png'>
 <image style='height:400px' src='./.github/assets/readme/14_image.png'>
+
+### 15 - Protocols and Delegates
+
+This is some studies on the protocols and delegates. Good pattern by the way, and a little reminder to myself in the future, this is not the same as observer, there is only one delegate per object created.
+
+### 16 - Iam Rick
+
+This is the challenge for the network stuff. I'm so used to `fetch` api from the browser that this way of doing looks very weird, I'll probably try to create a wrapper to make easier in the future for me.
+
+<image style='float:left; height:50px' src='./.github/assets/readme/16_icon.png'>
+<image style='height:400px' src='./.github/assets/readme/16_image.png'>
