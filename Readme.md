@@ -111,3 +111,11 @@ This is the challenge for the network stuff. I'm so used to `fetch` api from the
 
 <image style='float:left; height:50px' src='./.github/assets/readme/16_icon.png'>
 <image style='height:400px' src='./.github/assets/readme/16_image.png'>
+
+### 17 - Flash-Chat
+
+This is one of the most complex app so far. Because I want to use on the new SwiftUI I'll finish this app later. I hope to not forget to do that.
+
+<image style='float:left; height:50px' src='./.github/assets/readme/17_icon.png'>
+<image style='height:400px' src='./.github/assets/readme/17_image.png'>
+

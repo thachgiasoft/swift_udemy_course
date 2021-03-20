@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class ChatViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     
@@ -25,6 +25,8 @@ class ChatViewController: UIViewController {
         title = Constants.appName
         navigationItem.hidesBackButton = true
         tableView.dataSource = self
+        
+        tableView.register(UINib(nibName: Constants.messageCell, bundle: nil), forCellReuseIdentifier: Constants.messageCellIdentifier)
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -55,8 +57,8 @@ extension ChatViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = messages[indexPath.row].body
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.messageCellIdentifier, for: indexPath) as! MessageCell
+        cell.label.text = messages[indexPath.row].body
         
         return cell
     }
