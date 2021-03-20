@@ -119,3 +119,10 @@ This is one of the most complex app so far. Because I want to use on the new Swi
 <image style='float:left; height:50px' src='./.github/assets/readme/17_icon.png'>
 <image style='height:400px' src='./.github/assets/readme/17_image.png'>
 
+### 18 - I am Rich! (SwiftUI)
+
+Finally I'm with the cool guys on the new swift UI thing. Sounds good, does remember the flutter/Dark with little of sprinkle React.
+
+<image style='float:left; height:50px' src='./.github/assets/readme/18_icon.png'>
+<image style='height:400px' src='./.github/assets/readme/18_image.png'>
+
