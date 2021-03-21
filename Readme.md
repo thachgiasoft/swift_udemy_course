@@ -126,3 +126,9 @@ Finally I'm with the cool guys on the new swift UI thing. Sounds good, does reme
 <image style='float:left; height:50px' src='./.github/assets/readme/18_icon.png'>
 <image style='height:400px' src='./.github/assets/readme/18_image.png'>
 
+### 19 - Personal Card (SwiftUI)
+
+This is a personal card app for myself. Actually this is a little project to practice the concepts of creating views and creating components view (or subviews, like the Apple want me to say) for the app.
+
+<image style='height:400px' src='./.github/assets/readme/19_image.png'>
+
